@@ -1,5 +1,6 @@
 import './App.css';
 import datainfo from './data/db.json';
+import MainBanner from './Banner'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           })
         }
       </ul>
+      <MainBanner></MainBanner>
     </div>
   );
 }
