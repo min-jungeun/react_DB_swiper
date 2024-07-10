@@ -1,24 +1,22 @@
 import './App.css';
-import datainfo from './data/db.json';
-import MainBanner from './Banner'
+import {Title , Abtn} from './commonui/ui'
+
 
 function App() {
   return (
     <div className="App">
-      <ul>
-        {
-          datainfo["gnb"].map((v, i)=>{
-            return(
-              <li>
-                <a href={v.href}>
-                  {v.atext}
-                </a>
-              </li>  
-            )
-          })
-        }
-      </ul>
-      <MainBanner></MainBanner>
+      <Title>나는 스타일컴포넌트입니다.</Title>
+      <Title>베스트상품</Title>
+      <Title>추천상품</Title>
+      <h2>
+        나는 타이틀입니다
+        <Abtn>더보기</Abtn>
+      </h2>
+      <h2>
+        나는 타이틀입니다
+        <Abtn>응모하기</Abtn>
+      </h2>
+     
     </div>
   );
 }
